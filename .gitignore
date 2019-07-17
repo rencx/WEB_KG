@@ -2,3 +2,8 @@
 __pycache__/
 urls.bin
 webpages/*
+
+*.bin
+*.pkl
+*.html
+*.txt

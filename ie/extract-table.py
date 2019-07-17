@@ -34,7 +34,7 @@ import os
 # </dd>
 # </dl></div>
 
-pages=glob.glob('../webpages/*')
+pages=glob.glob('../spider/webpages/*')
 savepath='./paged-table.bin'
 print(len(pages))
 print(pages[0])

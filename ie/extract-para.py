@@ -8,7 +8,7 @@ import os,sys
 import threading
 
 print('loading pages')
-pages=glob.glob('../webpages/*')
+pages=glob.glob('../spider/webpages/*')
 print('loading pages done.')
 savepath='./paged.bin'
 
@@ -38,7 +38,7 @@ class MyThread(threading.Thread):
 		output.close()
 	def run(self):
 		try:
-			while len(pages)>0 and self.running:
+			while len(pages)>0 and self._running:
 				lock.acquire()
 				page=pages[0]
 				pages.remove(page)
